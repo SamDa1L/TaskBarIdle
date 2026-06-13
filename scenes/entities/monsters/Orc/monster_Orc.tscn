@@ -204,7 +204,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_87v17")
 }],
-"loop": true,
+"loop": false,
 "name": &"death",
 "speed": 10.0
 }, {
@@ -281,7 +281,6 @@ animations = [{
 [node name="Node2D" type="Node2D" unique_id=1590548490]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1250852967]
+scale = Vector2(1.5, 1.5)
 sprite_frames = SubResource("SpriteFrames_pkf1b")
-animation = &"attack02"
-frame = 5
-frame_progress = 1.0
+animation = &"attack01"
