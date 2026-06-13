@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://cdwvv42g7pusb"]
+
+[ext_resource type="Script" uid="uid://wfbvkgy6kpv" path="res://scripts/desktop/rift_window_mock.gd" id="1_rift_window"]
+[ext_resource type="PackedScene" uid="uid://keleoxep7k0m" path="res://scenes/dungeon/vs_dungeon_strip.tscn" id="2_dungeon_strip"]
+
+[node name="RiftWindowMock" type="Control" unique_id=1643514312]
+layout_mode = 3
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -490.0
+offset_top = -208.0
+offset_right = 490.0
+offset_bottom = -28.0
+grow_horizontal = 2
+grow_vertical = 0
+script = ExtResource("1_rift_window")
+
+[node name="VSDungeonStrip" parent="." unique_id=1598981986 instance=ExtResource("2_dungeon_strip")]
+layout_mode = 1
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="CollapsedBar" type="Panel" parent="." unique_id=314532015]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="CollapsedLabel" type="Label" parent="CollapsedBar" unique_id=1860708626]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "桌面裂隙正在低调运行"
+horizontal_alignment = 1
+vertical_alignment = 1

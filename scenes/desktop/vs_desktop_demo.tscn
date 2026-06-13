@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://cx7iyissfg8d3"]
+
+[ext_resource type="Script" uid="uid://3x3lxd48dt30" path="res://scripts/desktop/vs_desktop_demo.gd" id="1_vs_demo"]
+[ext_resource type="PackedScene" uid="uid://cdwvv42g7pusb" path="res://scenes/desktop/rift_window_mock.tscn" id="2_rift_window"]
+[ext_resource type="PackedScene" path="res://scenes/ui/vs_status_hud.tscn" id="3_status_hud"]
+
+[node name="VSDesktopDemo" type="Control" unique_id=933411311]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vs_demo")
+
+[node name="DesktopBackdrop" type="ColorRect" parent="." unique_id=1969650313]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.018, 0.02, 0.026, 1)
+
+[node name="RiftWindowMock" parent="." unique_id=1805841709 instance=ExtResource("2_rift_window")]
+layout_mode = 1
+
+[node name="VSStatusHud" parent="." unique_id=329686882 instance=ExtResource("3_status_hud")]
+layout_mode = 1

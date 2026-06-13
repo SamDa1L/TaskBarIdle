@@ -1,0 +1,53 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/vs_status_hud.gd" id="1_status_hud"]
+
+[node name="VSStatusHud" type="Control"]
+layout_mode = 3
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 18.0
+offset_top = 16.0
+offset_right = -18.0
+offset_bottom = 56.0
+grow_horizontal = 2
+script = ExtResource("1_status_hud")
+
+[node name="StatusPanel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="TitleLabel" type="Label" parent="StatusPanel"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 9.0
+offset_right = 152.0
+offset_bottom = 33.0
+mouse_filter = 2
+text = "桌面裂隙 VS"
+
+[node name="StatusLabel" type="Label" parent="StatusPanel"]
+layout_mode = 0
+offset_left = 150.0
+offset_top = 9.0
+offset_right = 710.0
+offset_bottom = 33.0
+mouse_filter = 2
+text = "裂隙初始化中"
+
+[node name="ToggleCollapseButton" type="Button" parent="StatusPanel"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -86.0
+offset_top = 6.0
+offset_right = -10.0
+offset_bottom = 34.0
+grow_horizontal = 0
+text = "收起"
